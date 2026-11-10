@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071018">
+  <meta name="description" content="BMO builds digital experiences, business systems, apps, and cinematic visual content.">
+  <title>BMO — Build What Moves You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="logo-btn" href="#home"  aria-label="BMO home">
+      <img src="./assets/bmo_logo.png" class="bmo-logo">
+    </a>
+    <h4>BMO Technologies</h4>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <div class="services-nav">
+        <a class="nav-link services-trigger" href="#services" aria-haspopup="true">Services <span class="chevron">⌄</span></a>
+        <div class="services-dropdown" id="servicesDropdown" aria-label="Services menu"></div>
+      </div>
+      <a class="nav-link" href="#about">About-us</a>
+      <a class="nav-link" href="#contact">Contact-us</a>
+    </nav>
+
+    <div class="header-tools">
+      <form class="search-wrap" id="searchForm" role="search">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="siteSearch" type="search" placeholder="Search services..." autocomplete="off" aria-label="Search services">
+        <kbd>↵</kbd>
+        <div class="search-results" id="searchResults" role="listbox"></div>
+      </form>
+      <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-dark" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="hero-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow light"><span class="status-pulse"></span> DIGITAL IDEAS. REAL-WORLD IMPACT.</div>
+        <h1>We turn bold ideas<br>into <span class="gradient-text">digital reality.</span></h1>
+        <p class="hero-copy">From intelligent work systems to unforgettable visual stories, BMO builds the digital tools and experiences that move businesses forward.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#services">Explore our services <span>↗</span></a>
+          <a class="button button-ghost" href="#about"><span class="play-icon">▶</span> Get to know BMO</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-item"><strong>01<span>/</span></strong><small>One creative partner</small></div>
+          <div class="proof-divider"></div>
+          <div class="proof-item"><strong>360<span>°</span></strong><small>Digital solutions</small></div>
+          <div class="proof-divider"></div>
+          <div class="proof-item"><strong>∞</strong><small>Room to build</small></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-2" aria-label="Abstract animated digital technology artwork">
+        <div class="visual-topline"><span>FIG. 001 / BMO LAB</span><span class="live-label"><i></i> SYSTEM ONLINE</span></div>
+        <div class="tech-core">
+          <div class="core-ring ring-a"></div><div class="core-ring ring-b"></div><div class="core-ring ring-c"></div>
+          <div class="core-cross cross-x"></div><div class="core-cross cross-y"></div>
+          <div class="core-center"><span class="core-glyph">B</span><span class="core-caption">BUILD / MOVE / OPTIMIZE</span></div>
+          <span class="orbit-point point-a"></span><span class="orbit-point point-b"></span><span class="orbit-point point-c"></span>
+        </div>
+        <div class="floating-chip chip-code"><span class="chip-dot"></span><div><small>CREATIVE ENGINE</small><strong>Always in motion</strong></div></div>
+        <div class="floating-chip chip-data"><small>LIVE SIGNAL</small><strong>01.0101 <span>↗</span></strong></div>
+        <div class="visual-bottomline"><span>DESIGN × ENGINEERING × STORY</span><span>EST. FOR WHAT'S NEXT</span></div>
+      </div>
+      <a href="#intro" class="scroll-cue"><span class="scroll-cue-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="intro section-pad" id="intro">
+      <div class="intro-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-index">01</span> WHAT WE DO</div>
+        <h2>Technology should do more than work.<br><span>It should work for you.</span></h2>
+      </div>
+      <div class="intro-detail reveal delay-1">
+        <p>We bring strategy, design, and development together to solve real problems. Whether you're streamlining operations, launching an app, or telling your brand story, we make the complex feel clear.</p>
+        <a class="text-link" href="#about">Meet your digital partner <span>↗</span></a>
+      </div>
+      <div class="intro-stats reveal">
+        <div class="stat"><strong>01</strong><span>Strategy-led<br>thinking</span></div>
+        <div class="stat"><strong>02</strong><span>Design with<br>purpose</span></div>
+        <div class="stat"><strong>03</strong><span>Built to<br>scale</span></div>
+        <div class="stat"><strong>04</strong><span>Support that<br>stays close</span></div>
+      </div>
+    </section>
+
+    <section class="services-section section-pad" id="services">
+      <div class="section-heading reveal">
+        <div><div class="eyebrow"><span class="eyebrow-index">02</span> OUR CAPABILITIES</div><h2>Good ideas deserve<br><span>great execution.</span></h2></div>
+        <p>One partner. Multiple disciplines.<br>Everything connected by a clear purpose.</p>
+      </div>
+      <div class="service-grid" id="serviceGrid"></div>
+      <div class="services-bottom reveal"><span class="micro-label">HAVE SOMETHING SPECIFIC IN MIND?</span><a class="text-link" href="#contact">Let's shape the brief together <span>↗</span></a></div>
+    </section>
+
+    <section class="about-section section-pad" id="about">
+      <div class="about-visual reveal">
+        <div class="about-visual-bg"></div>
+        <div class="about-coordinate coord-top">BMO / STUDIO NOTES <span>— 001</span></div>
+        <div class="about-art">
+          <div class="art-square square-one"></div><div class="art-square square-two"></div><div class="art-circle"></div>
+          <div class="art-cross">+</div><div class="art-label">THINK<br>BEYOND.</div>
+        </div>
+        <div class="about-coordinate coord-bottom"><span>DESIGN WITH INTENT</span><span>BUILD WITH CARE ↗</span></div>
+      </div>
+      <div class="about-copy reveal delay-1">
+        <div class="eyebrow"><span class="eyebrow-index">03</span> ABOUT BMO</div>
+        <h2>Curious minds.<br><span>Useful technology.</span></h2>
+        <p class="about-lead">BMO is a digital company built around a simple belief: the right combination of technology and creativity can make work easier, brands stronger, and ideas more powerful.</p>
+        <p>We work across software, digital products, and visual communication. We listen first, make things with intention, and keep the end-user at the centre of every decision.</p>
+        <div class="about-values">
+          <div><span class="value-symbol">↗</span><strong>Built around you</strong><small>Solutions shaped by your goals.</small></div>
+          <div><span class="value-symbol">⌘</span><strong>Made to connect</strong><small>Creative thinking meets solid tech.</small></div>
+        </div>
+        <a class="button button-dark" href="#contact">Build with BMO <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="process-section section-pad">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-index">04</span> HOW WE WORK</div><h2>Clear process.<br><span>Better outcomes.</span></h2></div><p>From the first conversation to the final handover, we keep the process collaborative and transparent.</p></div>
+      <div class="process-grid">
+        <article class="process-step reveal"><span class="step-no">01 / DISCOVER</span><div class="step-icon">⌕</div><h3>Understand the why.</h3><p>We learn about your goals, your audience, and the challenge worth solving.</p></article>
+        <article class="process-step reveal delay-1"><span class="step-no">02 / DESIGN</span><div class="step-icon">◈</div><h3>Map the experience.</h3><p>We shape the right solution, visual direction, and practical project scope.</p></article>
+        <article class="process-step reveal delay-2"><span class="step-no">03 / BUILD</span><div class="step-icon">⌘</div><h3>Make it real.</h3><p>We create, test, refine, and keep you in the loop as the work takes shape.</p></article>
+        <article class="process-step reveal delay-3"><span class="step-no">04 / LAUNCH</span><div class="step-icon">↗</div><h3>Move forward.</h3><p>We help you launch confidently and plan what comes next.</p></article>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact">
+      <div class="contact-backdrop" aria-hidden="true"></div>
+      <div class="contact-copy reveal"><div class="eyebrow light"><span class="eyebrow-index">05</span> START A PROJECT</div><h2>Let's make<br>something <span class="gradient-text">matter.</span></h2><p>Have a project, a challenge, or just the beginning of an idea? Tell us a little about it. We'll take it from there.</p>
+        <div class="contact-details"><a href="mailto:hello@bmo.co.tz"><span>EMAIL</span>hello@bmo.co.tz ↗</a><div><span>LOCATION</span>Tanzania · Working everywhere</div></div>
+      </div>
+      <form class="contact-form reveal delay-1" id="contactForm">
+        <div class="form-heading"><span>PROJECT ENQUIRY</span><span class="form-required">* REQUIRED</span></div>
+        <label>Your name *<input name="name" required placeholder="Name or company"></label>
+        <div class="form-row"><label>Email address *<input type="email" name="email" required placeholder="you@example.com"></label><label>Phone <input name="phone" type="tel" placeholder="+255 ..."></label></div>
+        <label>What can we help with? *<select name="service" id="contactService" required><option value="">Choose a service</option></select></label>
+        <label>Tell us about your project *<textarea name="message" rows="4" required placeholder="A little context goes a long way..."></textarea></label>
+        <button class="button button-primary submit-button" type="submit">Send project enquiry <span>↗</span></button>
+        <p class="form-note">This demo form opens your email app. Connect a form backend before publishing.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand-col">
+        <a class="logo-btn" href="#home"  aria-label="BMO home">
+          <img src="./assets/bmo_logo.png" class="bmo-logo">
+        </a>
+        <p>Digital experiences, practical systems, and creative stories for what's next.</p><div class="social-links"><a href="#" aria-label="Instagram">IG ↗</a><a href="#" aria-label="LinkedIn">IN ↗</a><a href="#" aria-label="Behance">BE ↗</a></div></div>
+      <div class="footer-col"><h4>EXPLORE</h4><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About us</a><a href="#contact">Contact us</a></div>
+      <div class="footer-col"><h4>SERVICES</h4><a href="#services" data-service-link="websites">Websites</a><a href="#services" data-service-link="work-systems">Work systems</a><a href="#services" data-service-link="app-design">App design</a><a href="#services" data-service-link="graphics-design">Graphics & motion</a></div>
+      <div class="footer-col footer-contact"><h4>LET'S CONNECT</h4><a href="mailto:hello@bmo.co.tz">hello@bmo.co.tz</a><a href="#contact">Start a project ↗</a><button class="footer-policy" data-policy="terms">Terms & conditions</button><button class="footer-policy" data-policy="privacy">Privacy policy</button></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> BMO Technologies. All rights reserved.</span><span>DESIGNED TO MOVE YOU <i>✳</i></span><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+
+  <div class="page-overlay" id="servicePage" aria-hidden="true">
+    <div class="overlay-backdrop" data-close-service></div>
+    <section class="service-page-panel" role="dialog" aria-modal="true" aria-labelledby="servicePageTitle">
+      <div class="service-page-top"><a class="brand mini-brand" href="#home"><span class="brand-mark">BMO<span class="brand-dot">.</span></span></a><button class="icon-button" id="closeServicePage" aria-label="Close service page">✕</button></div>
+      <div class="service-page-content">
+        <div class="eyebrow"><span class="eyebrow-index">BMO / SERVICE</span> OUR EXPERTISE</div>
+        <div class="service-page-heading"><div><h2 id="servicePageTitle">Service title</h2><p id="servicePageDescription"></p></div><span class="service-page-index" id="servicePageIndex">01 / 06</span></div>
+        <div class="carousel-wrap">
+          <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Previous option">←</button>
+          <div class="service-carousel" id="serviceCarousel"></div>
+          <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Next option">→</button>
+        </div>
+        <div class="carousel-controls"><span>EXPLORE THE POSSIBILITIES</span><div class="carousel-dots" id="carouselDots"></div><span>DRAG OR USE ARROWS ↔</span></div>
+        <div class="service-page-bottom"><p id="servicePageFootnote">Not sure which option is right? Tell us what you're trying to achieve.</p><a class="button button-dark" href="#contact" id="servicePageContact">Discuss this service <span>↗</span></a></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-overlay" id="requestModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-request></div>
+    <section class="request-modal" role="dialog" aria-modal="true" aria-labelledby="requestTitle">
+      <div class="modal-top"><div><span class="eyebrow-index">BMO / NEW BRIEF</span><h2 id="requestTitle">Let's get started.</h2></div><button class="icon-button" id="closeRequest" aria-label="Close request form">✕</button></div>
+      <p id="requestDescription">Share a few details and we'll be in touch.</p>
+      <form id="requestForm">
+        <input type="hidden" name="serviceName" id="requestServiceName"><input type="hidden" name="optionName" id="requestOptionName">
+        <div class="form-row"><label>Your name *<input name="name" required placeholder="Full name"></label><label>Company <input name="company" placeholder="Company (optional)"></label></div>
+        <div class="form-row"><label>Email address *<input name="email" type="email" required placeholder="you@example.com"></label><label>Phone <input name="phone" type="tel" placeholder="+255 ..."></label></div>
+        <label>What do you need? *<textarea name="details" rows="4" required id="requestDetails" placeholder="Tell us about your goals, features, timeline, or ideas..."></textarea></label>
+        <button class="button button-primary submit-button" type="submit">Send service request <span>↗</span></button>
+      </form>
+    </section>
+  </div>
+
+  <div class="policy-overlay" id="policyOverlay" aria-hidden="true">
+    <div class="overlay-backdrop" data-close-policy></div>
+    <section class="policy-panel" role="dialog" aria-modal="true" aria-labelledby="policyTitle">
+      <div class="policy-top">
+        <a class="logo-btn" href="#home"  aria-label="BMO home">
+          <img src="./assets/bmo_logo.png" class="bmo-logo">
+        </a>
+    <button class="icon-button" id="closePolicy" aria-label="Close policy">✕</button></div>
+      <div class="policy-content"><div class="eyebrow"><span class="eyebrow-index">BMO / INFORMATION</span> PLEASE READ</div><h2 id="policyTitle">Terms & conditions</h2><div id="policyBody" class="policy-body"></div><p class="policy-disclaimer">Template content for launch preparation. Have a qualified professional review and adapt it to your business, local law, and actual data practices before publishing.</p></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
