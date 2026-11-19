@@ -1,6 +1,6 @@
 /* BMO service catalog: add services/options here; the UI is generated from data. */
 const BMO_CONFIG = {
-  email: "hello@bmo.co.tz",
+  email: "info@bmotechnologies.co.tz",
   services: [
     {
       id: "websites", number: "01", icon: "⌘", title: "Website design & development",
@@ -324,23 +324,6 @@ document.addEventListener("DOMContentLoaded", () => {
     $("#contactService").value = name;
     $("#contact").scrollIntoView({ behavior: "smooth" });
     setTimeout(() => $('input[name="name"]', $("#contactForm")).focus({ preventScroll: true }), 550);
-  });
-  $("#contactForm").addEventListener("submit", event => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const subject = encodeURIComponent(`BMO project enquiry — ${data.get("service")}`);
-    const body = encodeURIComponent(`Name: ${data.get("name")}\nEmail: ${data.get("email")}\nPhone: ${data.get("phone") || "Not provided"}\nService: ${data.get("service")}\n\nProject details:\n${data.get("message")}`);
-    window.location.href = `mailto:${BMO_CONFIG.email}?subject=${subject}&body=${body}`;
-    showToast("Your email app should open with the enquiry ready to send.");
-  });
-  $("#requestForm").addEventListener("submit", event => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const subject = encodeURIComponent(`BMO service request — ${data.get("serviceName")} / ${data.get("optionName")}`);
-    const body = encodeURIComponent(`Name: ${data.get("name")}\nCompany: ${data.get("company") || "Not provided"}\nEmail: ${data.get("email")}\nPhone: ${data.get("phone") || "Not provided"}\nService: ${data.get("serviceName")}\nOption: ${data.get("optionName")}\n\nBrief:\n${data.get("details")}`);
-    window.location.href = `mailto:${BMO_CONFIG.email}?subject=${subject}&body=${body}`;
-    closeRequest();
-    showToast("Your email app should open with your service request ready to send.");
   });
   $$('a[href^="#"]:not([data-open-service])').forEach(link => {
     link.addEventListener("click", event => {
