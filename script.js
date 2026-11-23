@@ -2,6 +2,22 @@
 const BMO_CONFIG = {
   email: "info@bmotechnologies.co.tz",
   services: [
+      {
+    id: "social-media",
+    number: "02",
+    icon: "◈",
+    title: "Social Media Accounts management",
+    short: "Social media",
+    description: "Consistent content planning, publishing, and community engagement across your social channels to grow reach and brand loyalty.",
+    searchTerms: ["social media", "social media management", "instagram", "tiktok", "linkedin", "facebook", "content calendar", "community management", "reels", "growth"],
+    options: [
+      { title: "Content calendar & posting", icon: "◈", tag: "SOC / 01", description: "Planned feed posts, carousels, and short-form videos published consistently on schedule." },
+      { title: "Account setup & optimization", icon: "✦", tag: "SOC / 02", description: "Cohesive bios, profile visuals, highlights, and channel positioning across platforms." },
+      { title: "Community & DM management", icon: "◎", tag: "SOC / 03", description: "Timely replies to comments and direct messages to keep followers engaged and supported." },
+      { title: "Campaign & launch support", icon: "↗", tag: "SOC / 04", description: "Coordinated promotional posts and announcements for new products, offers, or events." },
+      { title: "Analytics & monthly reporting", icon: "▤", tag: "SOC / 05", description: "Clear performance tracking on reach, engagement, and top-performing content to guide next steps." }
+      ]
+    },
     {
       id: "websites", number: "01", icon: "⌘", title: "Website design & development",
       short: "Websites", description: "Fast, responsive websites designed to build trust, tell your story, and turn visitors into customers.",
@@ -62,6 +78,22 @@ const BMO_CONFIG = {
       ]
     },
     {
+      id: "google-business-profile",
+      number: "03",
+      icon: "⌖",
+      title: "Google Business Profile setup",
+      short: "Google Business",
+      description: "Get found on Google Search and Maps with a verified, fully optimized profile that turns local searches into visits and calls.",
+      searchTerms: ["google business profile", "google my business", "gmb", "google maps", "local seo", "business listing", "google reviews", "local search", "map pin", "verification"],
+      options: [
+        { title: "Profile creation & verification", icon: "⌖", tag: "GBP / 01", description: "Complete setup, category selection, and verification support to get your business live on Google." },
+        { title: "Local SEO optimization", icon: "↗", tag: "GBP / 02", description: "Keyword-rich business descriptions, services, attributes, and service areas built to rank locally." },
+        { title: "Photos, branding & products", icon: "◫", tag: "GBP / 03", description: "Structured upload of cover photos, logos, product catalogs, and service menus that build trust." },
+        { title: "Review & Q&A strategy", icon: "✦", tag: "GBP / 04", description: "Direct review links, response templates, and pre-filled FAQs to boost credibility and conversions." },
+        { title: "Profile audit & cleanup", icon: "▦", tag: "GBP / 05", description: "Fixing duplicate listings, inaccurate map pins, or suspended profiles so customers reach the right place." }
+      ]
+    },
+    {
       id: "motion-graphics", number: "05", icon: "▷", title: "Motion graphics",
       short: "Motion graphics", description: "Bring ideas to life with animated typography, logo reveals, explainers, and visual effects.",
       searchTerms: ["motion", "animation", "animated logo", "logo reveal", "2d animation", "3d animation", "kinetic typography", "explainer", "visual effects", "vfx"],
@@ -93,6 +125,22 @@ const BMO_CONFIG = {
         { title: "Cinematic edit & grading", icon: "◉", tag: "EDIT / 03", description: "Shape mood and visual continuity through pacing, color, and finishing." },
         { title: "Event & documentary edit", icon: "▤", tag: "EDIT / 04", description: "Turn extensive footage into a clear story with thoughtful sequencing." },
         { title: "Sound & finishing", icon: "≋", tag: "EDIT / 05", description: "Refine audio, titles, transitions, captions, and final delivery formats." }
+      ]
+    },
+    {
+      id: "whatsapp-chatbot",
+      number: "04",
+      icon: "❖",
+      title: "WhatsApp Business auto-reply chatbot",
+      short: "WhatsApp Bot",
+      description: "Automated 24/7 WhatsApp replies that answer FAQs, share catalogs, qualify leads, and route buyers straight to your team.",
+      searchTerms: ["whatsapp", "whatsapp chatbot", "whatsapp business", "auto reply", "chatbot", "whatsapp automation", "customer support", "lead capture", "whatsapp api", "automated messages"],
+      options: [
+        { title: "24/7 FAQ & welcome flows", icon: "❖", tag: "WAB / 01", description: "Instant greetings, business hours, pricing, and common question replies whenever customers message." },
+        { title: "Product & service menu", icon: "▤", tag: "WAB / 02", description: "Interactive button and list menus that let customers browse offerings and request quotes in chat." },
+        { title: "Lead capture & booking bot", icon: "↗", tag: "WAB / 03", description: "Guided chat flows that collect customer details, orders, or appointment slots automatically." },
+        { title: "AI-powered smart assistant", icon: "✦", tag: "WAB / 04", description: "Custom-trained conversational replies that understand natural questions using your business info." },
+        { title: "Human handoff & CRM sync", icon: "◫", tag: "WAB / 05", description: "Smooth transfer to a live agent when needed, with chat leads logged to your sheet or CRM." }
       ]
     }
   ]
