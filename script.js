@@ -157,16 +157,26 @@ function closeService() {
 function renderCarousel() {
   if (!currentService) return;
   const options = currentService.options;
-  $("#serviceCarousel").innerHTML = options.map((option, index) => `
+  const carousel = $("#serviceCarousel");
+  const wrap = carousel.parentElement; // .carousel-wrap
+
+  carousel.innerHTML = options.map((option, index) => `
     <article class="option-card ${index === activeOptionIndex ? "is-active" : ""}" data-option-index="${index}" aria-label="${escapeHTML(option.title)}">
       <div class="option-art"><span class="option-tag">${escapeHTML(option.tag)}</span><div class="option-art-symbol"><span>${escapeHTML(option.icon)}</span></div></div>
       <div class="option-card-content"><h3>${escapeHTML(option.title)}</h3><p>${escapeHTML(option.description)}</p>
       <button class="button ${index === activeOptionIndex ? "button-primary" : "button-dark"}" data-request-option="${index}">Get service <span>↗</span></button></div>
     </article>`).join("");
+
   $("#carouselDots").innerHTML = options.map((option, index) => `<button class="carousel-dot ${index === activeOptionIndex ? "active" : ""}" data-carousel-index="${index}" aria-label="Show option ${index + 1}"></button>`).join("");
-  const activeCard = $(`.option-card[data-option-index="${activeOptionIndex}"]`);
-  if (activeCard && window.matchMedia("(max-width: 560px)").matches) {
-    $("#serviceCarousel").scrollTo({ left: activeCard.offsetLeft - 35, behavior: "smooth" });
+
+  const activeCard = carousel.querySelector(`.option-card[data-option-index="${activeOptionIndex}"]`);
+  if (activeCard && wrap) {
+    requestAnimationFrame(() => {
+      const wrapCenter = wrap.clientWidth / 2;
+      const cardCenter = activeCard.offsetLeft + activeCard.offsetWidth / 2;
+      const offset = wrapCenter - cardCenter;
+      carousel.style.transform = `translateX(${offset}px)`;
+    });
   }
 }
 function moveCarousel(direction) {
