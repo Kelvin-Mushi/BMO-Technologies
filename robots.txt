@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bmotechnologies.co.tz/sitemap.xml
+Sitemap: https://bmotechnologies.co.tz/sitemap.xml
+
